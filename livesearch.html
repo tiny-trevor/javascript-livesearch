@@ -1,0 +1,14 @@
+<h2 class='center'>Search</h2>
+
+    <div class='center'>
+        <select id='searchtype'>
+            <option selected>Choose a search option...
+            <option value='membername'>Character Name
+            <option value='threadtitle'>Thread Title
+            <option value='forumtitle'>Forums
+        </select><input type='text' name='searchquery' autocomplete='off' onkeyup='FindResults(this.value, searchtype.value)'>
+    </div>
+    <hr />
+    
+    <div id='Results' style='width:75%; margin: auto;'>
+    </div>
